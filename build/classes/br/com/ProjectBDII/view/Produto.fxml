@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ProjectBDII.Controller.ProdutoController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="250.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtos">
+               <font>
+                  <Font name="Britannic Bold" size="38.0" />
+               </font>
+            </Text>
+            <TextField fx:id="tfNome" layoutX="356.0" layoutY="99.0" prefHeight="25.0" prefWidth="203.0" promptText="Digite o Nome " />
+            <TextField fx:id="tfDescricao" layoutX="356.0" layoutY="149.0" prefHeight="25.0" prefWidth="203.0" promptText="Digite a Descrição " />
+            <Label layoutX="356.0" layoutY="82.0" text="Nome" />
+            <Label layoutX="356.0" layoutY="132.0" text="Descrição" />
+            <Label layoutX="358.0" layoutY="183.0" text="Valor" />
+            <Label layoutX="357.0" layoutY="234.0" text="Quantidade" />
+            <Label layoutX="359.0" layoutY="284.0" text="Unidade" />
+            <TextField fx:id="tfValor" layoutX="356.0" layoutY="200.0" prefHeight="25.0" prefWidth="203.0" promptText="Digite o Valor" />
+            <TextField fx:id="tfQuant" layoutX="356.0" layoutY="251.0" prefHeight="25.0" prefWidth="203.0" promptText="Digite a Quantidade " />
+            <TextField fx:id="tfUnidade" layoutX="356.0" layoutY="301.0" prefHeight="25.0" prefWidth="203.0" promptText="Digite a Unidade" />
+            <Button fx:id="btCadastrar" layoutX="355.0" layoutY="347.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="203.0" text="Cadastrar" />
+            <TableView fx:id="Tabela" layoutX="27.0" layoutY="88.0" prefHeight="240.0" prefWidth="307.0">
+              <columns>
+                <TableColumn fx:id="clmID" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="clmNome" prefWidth="75.0" text="Nome" />
+                  <TableColumn fx:id="clmDescricao" prefWidth="75.0" text="Descrição" />
+                  <TableColumn fx:id="clmValor" prefWidth="75.0" text="Valor" />
+                  <TableColumn fx:id="clmQuant" prefWidth="75.0" text="Quantidade" />
+                  <TableColumn fx:id="clmUnidade" prefWidth="75.0" text="Unidade" />
+              </columns>
+            </TableView>
+            <Button fx:id="btEditar" layoutX="26.0" layoutY="347.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" text="Editar" />
+            <Button fx:id="btRemover" layoutX="191.0" layoutY="347.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="143.0" text="Remover" />
+            <Label fx:id="lbId" layoutX="520.0" layoutY="74.0" textFill="WHITE" />
+            <TextField fx:id="tfBuscar" layoutX="27.0" layoutY="52.0" promptText="Buscar..." />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
